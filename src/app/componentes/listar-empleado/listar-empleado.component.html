@@ -1,0 +1,38 @@
+<div id="marco"></div>
+<div *ngIf="salio" >
+        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px; text-align: center;"><span style="font-size: 26px; font-family: fantasy;"> Welcome</span> <span style="letter-spacing: 1px; color: gray;"> {{usuario}}</span></h5>
+<div class="card">
+    <div class="card-header" style="color: black; font-weight: bold; font-size: 25px; text-align: center; font-family: fantasy;">
+        Empleados
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead style="text-align: center ;">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Trabajo</th>
+                    <th>Dirrecion</th>
+                    <th>Telefono</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let empleado of Empleados; let iControl=index">
+                    <td>{{ empleado.nombre }} {{ empleado.apellido }}</td>
+                    <td> {{ empleado.trabajo }}</td>
+                    <td> {{ empleado.barrio }}</td>
+                    <td> {{ empleado.telefono }}</td>
+                    <td> {{ empleado.descripcion }}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+    </div>
+</div>
+<div *ngIf="!salio">
+    <div class="alert alert-danger" style="margin-top: 20%;">
+      <p class="alert-link" style="text-align: center;">Tienes que iniciar secion primero para mirar este apartado.</p>
+    </div>
+  </div>

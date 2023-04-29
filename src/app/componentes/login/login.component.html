@@ -1,0 +1,61 @@
+
+<section class="vh-100" style="background-color: white;" *ngIf="!inicio">
+    <br>
+    <br>
+    <br>
+    <div id="marco">
+      <div class="container py-5 h-100" >
+        <div class="row d-flex justify-content-center align-items-center h-100" >
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 5rem; background-color: #F8FFE6" >
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+                  
+                    <form  [formGroup]="iniciarSecion" (ngSubmit)="enviarDatos()">
+                      <div class="d-flex align-items-center mb-3 pb-1" style="justify-content: center;">
+                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                        <h1>Informals JOBS</h1> <h2>col</h2>
+                      </div> 
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Iniciar Sesión</h5>
+  
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">Email</label>
+                        <input type="email" formControlName="email" id="form2Example17" class="form-control form-control-lg" style="width: 400px;"/>
+                      </div>
+                      <br>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example27">Contraseña</label>
+                        <input type="password" formControlName="password" id="form2Example27" class="form-control form-control-lg" style="width: 400px;"/>
+                      </div>
+                      
+                      <br>
+                      <br>
+                      <br>
+                      <div class="pt-1 mb-4">
+                        <button class="btn btn-dark btn-lg btn-block" type="submit">Acceder</button>
+                      </div>
+                      <h5 *ngIf="error" class="fw-normal mb-3 pb-3" style="letter-spacing: 1px; color: red">Usuario o Contraseña incorrecta</h5>
+
+                    </form>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <img src="https://pic.pikbest.com/02/06/78/208888piC7eq.jpg!sw800">
+  <p>by:@InformalsJOBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Todos los derechos reservados:Informals_JOBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2022-2</p>
+  <div *ngIf="inicio">
+    <div class="alert alert-success" style="margin-top: 20%;">
+      <p class="alert-link" style="text-align: center;">Ya te encuentras dentro de una secion.</p>
+    </div>
+  </div>
+ 
+
+
+  

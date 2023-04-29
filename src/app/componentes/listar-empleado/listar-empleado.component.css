@@ -1,0 +1,17 @@
+#marco{
+    position: absolute;
+	top: 110px;
+	left:100px;
+    border-style: solid;
+    color: #D2D2D2;
+    background: center;
+    border-radius: 50px;
+    width: 1720px;
+    height: 594px; 
+}
+tr{
+    text-align: center;
+}
+td{
+    text-align: center;
+}

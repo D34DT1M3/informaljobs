@@ -1,0 +1,43 @@
+#marco{
+    position: absolute;
+	top: 100px;
+	left:100px;
+    border-style: solid;
+    color: #D2D2D2;
+    background: center;
+    border-radius: 50px;
+    width: 1720px;
+    height: 594px; 
+  }
+
+#cuadro{
+    margin-top: 25px;
+    width: 500px;
+  }
+  
+  #titulo{
+      font-size: 25px;
+      font-family: fantasy;
+  }
+  
+  #texto{
+      position: absolute;
+      top: 100px;
+      left:850px;
+      width: 400px;
+      font-size: 30px;
+  }
+  
+  img{
+      position: absolute;
+      top: 450px;
+      left:1010px;
+      width: 400px;
+      font-size: 30px;
+      border-radius: 10px;
+  }
+  
+  #refe{
+      margin-top: 150px;
+      margin-left: -250px;
+  }

@@ -1,0 +1,34 @@
+/*Estilo de login*/
+
+#marco{
+  border-style: solid;
+  color: #D2D2D2;
+  background: center;
+  border-radius: 50px;
+  height: 600px;
+  
+}
+
+h1{
+    color: #664EFE;
+    text-align: center;
+    font-family: fantasy;
+}
+
+h2{
+    color: #2F2F2F;
+    font-size: 100px;
+    font-family: Freestyle Script;
+}
+
+img{
+    position: absolute;
+	top: 320px;
+	left:1030px;
+    width: 400px;
+}
+
+p{
+  margin-top: -80px;
+  margin-left: -250px;
+}

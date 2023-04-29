@@ -1,0 +1,84 @@
+<div id="marco"></div>
+<div id="cuadro" class="card"  *ngIf="!inicio">
+    <div class="card-header">
+       <h1 id="titulo">Añadete a la convocatoria</h1>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formularioDeEmpleados" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre:</label>
+              <input type="text"
+                class="form-control" name="" formControlName="nombre" id="" aria-describedby="helpId" placeholder="Escribe tu nombre" style="width: 300px;">
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Apellido:</label>
+              <input type="text"
+                class="form-control" name="" formControlName="apellido" id="" aria-describedby="helpId" placeholder="Escribe tu apellido" style="width: 300px;">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Edad:</label>
+                <input type="number"
+                  class="form-control" min="18" max="70" name="" formControlName="edad" id="" aria-describedby="helpId" placeholder="Escribe tu edad" style="width: 300px;">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Email:</label>
+                <input type="email"
+                  class="form-control" name="" formControlName="email" id="" aria-describedby="helpId" placeholder="Escribe tu correo" style="width: 300px;">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Numero:</label>
+                <input type="text"
+                  class="form-control" name="" formControlName="telefono" id="" aria-describedby="helpId" placeholder="Escribe tu numero" style="width: 300px;">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Escribe tu dirrecion:</label>
+                <input type="text"
+                  class="form-control" name="" formControlName="barrio" id="" aria-describedby="helpId" placeholder="Escribe tu numero" style="width: 300px;">
+              
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Escribe tu trabajo:</label>
+            <input type="text"
+            class="form-control" name="" formControlName="trabajo" id="" aria-describedby="helpId" placeholder="Escribe tu numero"style="width: 300px;">
+        
+      </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Contraseña:</label>
+                <input type="password"
+                  class="form-control" name="" formControlName="password" id="" aria-describedby="helpId" placeholder="Escribe una Contraseña" style="width: 300px;">
+              </div>
+              <div class="mb-3">
+              <label for="" class="form-label">Descripcion:</label>
+              <input type="text"
+                class="form-control" name="" formControlName="descripcion" id="" aria-describedby="helpId" placeholder="Escribe una descripcion" max="250" style="width: 300px;"> 
+            </div>
+            <br>
+            <br>
+              <div class="btn-group" role="group" aria-label="">
+                <button type="submit" class="btn btn-dark btn-lg btn-block" style="margin-left: 320px;">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div *ngIf="inicio" >
+  <div class="alert alert-success" style="margin-top: 20%;">
+    <p class="alert-link" style="text-align: center;">Tienes que cerrar secion para entrar a este apartado.</p>
+  </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+
+<div id="texto"><p>Pequeño texto<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p></div>
+  <img src="https://media.istockphoto.com/id/1030355148/es/vector/hombre-mantenga-portapapeles-de-registro-con-la-lista-de-verificaci%C3%B3n-hombre-de-la-mano.jpg?s=612x612&w=0&k=20&c=P0_veDT3x1HB1CDImevL2nJUzWVf0iE7FSlQbjYyfXQ=">
+
+  <p id="refe">by:@InformalsJOBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Todos los derechos reservados:Informals_JOBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2022-2</p>  
+
